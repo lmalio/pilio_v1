@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🏔️ Πήλιο 3ήμερο 🌊</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:20px;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(to bottom,#dbeafe,#f0fdfa);
+    color:#1e293b;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+    color:#475569;
+}
+
+.main-link{
+    display:block;
+    text-align:center;
+    background:#14b8a6;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:18px;
+    margin-bottom:20px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.stats{
+    background:white;
+    padding:15px;
+    border-radius:18px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    text-align:center;
+    font-size:14px;
+}
+
+.day-buttons{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.day-btn{
+    flex:1;
+    border:none;
+    padding:15px;
+    border-radius:15px;
+    background:#3b82f6;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.day-btn.active{
+    background:#1e3a8a;
+}
+
+.day{
+    display:none;
+}
+
+.day.active{
+    display:block;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:18px;
+    margin-bottom:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.time{
+    color:#64748b;
+    font-size:14px;
+}
+
+.location{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+.actions{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.actions a{
+    text-decoration:none;
+    background:#0ea5e9;
+    color:white;
+    padding:10px 14px;
+    border-radius:12px;
+    font-size:14px;
+}
+
+.funfact{
+    margin-top:15px;
+    background:#fff7ed;
+    border-left:5px solid #fb923c;
+    padding:12px;
+    border-radius:12px;
+    font-size:14px;
+}
+
+.done{
+    margin-top:15px;
+}
+/* WEATHER */
+.weather{
+margin:15px 20px;
+padding:14px;
+border-radius:14px;
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+font-weight:600;
+}
+
+.footer{
+    margin-top:30px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🏔️ Πήλιο 2026 🌊</h1>
+<div class="subtitle">3 μέρες • θάλασσα • φαγητό •  </div>
+
+<a href="https://maps.app.goo.gl/o9PjXXch7GybAJ4d6" class="main-link">
+🏨 Ξενοδοχείο
+</a>
+<div class="weather">
+🌤️ 27°C • Sunshine mode ON • Sea 24°C
+</div>
+
+<div class="stats">
+🏊 Βουτιές στόχος: 4+ <br>
+🍹 Ποτά στόχος: 2+ <br>
+☀️ Εγκαύματα: ιδανικά 0
+</div>
+
+<div class="day-buttons">
+    <button type="button" class="day-btn active" onclick="showDay(1,this)">🌊 Day 1</button>
+    <button type="button" class="day-btn" onclick="showDay(2,this)">🍹 Day 2</button>
+    <button type="button" class="day-btn" onclick="showDay(3,this)">🏠 Day 3</button>
+</div>
+
+<!-- DAY 1 -->
+
+<div id="day1" class="day active">
+
+    <div class="card">
+        <div class="time">08:00</div>
+        <div class="location">🚗 Αναχώρηση</div>
+
+        <div class="actions">
+            <a href="#">🎵 Roadtrip Playlist</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">12:00</div>
+        <div class="location">🏖️ Άγιοι Σαράντα</div>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/FfiyMQ9MwZGaifXT9">📍 Google Maps</a>
+        </div>
+
+        <div class="funfact">
+            💡 Οι Άγιοι Σαράντα θεωρούνται από πολλούς η πιο
+            "κυκλαδίτικη" παραλία του Πηλίου λόγω των χρωμάτων της θάλασσας.
+        </div>
+
+        <div class="done">
+            <input type="checkbox"> Πρώτη βουτιά ολοκληρώθηκε ✅
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">17:30</div>
+        <div class="location">🏨 Check In</div>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/o9PjXXch7GybAJ4d6">🏨 Ξενοδοχείο Maps</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">19:00</div>
+        <div class="location">🍷 Κισσός</div>
+
+        <p>Βόλτα στο χωριό και φαγητό.</p>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/7sjmGaPZMmefLvjZ7">📍 Google Maps</a>
+            <a href="https://maps.app.goo.gl/nowRfNLJnPRegqoR6">🍽️ Ταβέρνα</a>
+        </div>
+
+        <div class="funfact">
+            💡 Ο Κισσός είναι ένα από τα παλαιότερα χωριά του Πηλίου και
+            διαθέτει αιωνόβια πλατάνια και πανέμορφη πλατεία.
+        </div>
+    </div>
+
+</div>
+
+<!-- DAY 2 -->
+
+<div id="day2" class="day">
+
+    <div class="card">
+        <div class="time">08:30</div>
+        <div class="location">🚗 Αναχώρηση</div>
+    </div>
+
+    <div class="card">
+        <div class="time">09:00</div>
+        <div class="location">🌊 Μυλοπόταμος</div>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/PKQzCEfdrcTrXLp47">📍 Google Maps</a>
+        </div>
+
+        <div class="funfact">
+            💡 Ο βράχος που χωρίζει τον Μυλοπόταμο στα δύο είναι ίσως
+            το πιο φωτογραφημένο σημείο του Πηλίου.
+        </div>
+
+        <div class="done">
+            <input type="checkbox"> Δεύτερη βουτιά completed ✅
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">18:00</div>
+        <div class="location">🌳 Τσαγκαράδα</div>
+
+        <p>Πλατεία • Πλάτανος • Φαγητό</p>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/w7EiuGJZQXasnxEXA">📍 Πλατεία Τσαγκαράδας</a>
+            <a href="#">🍽️ Ταβέρνα</a>
+        </div>
+
+        <div class="funfact">
+            💡 Ο διάσημος πλάτανος της Τσαγκαράδας εκτιμάται ότι έχει
+            ηλικία μεγαλύτερη των 1000 ετών.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">21:00</div>
+        <div class="location">🍹 Άγιος Ιωάννης</div>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/s9epXBQMH9txfHnd9">📍 Google Maps</a>
+            <a href="#">🍸 Bar</a>
+        </div>
+
+        <div class="funfact">
+            💡 Η περιοχή του ανατολικού Πηλίου χρησιμοποιήθηκε για
+            γυρίσματα της ταινίας Mamma Mia!.
+        </div>
+    </div>
+
+</div>
+
+<!-- DAY 3 -->
+
+<div id="day3" class="day">
+
+    <div class="card">
+        <div class="time">08:30</div>
+        <div class="location">🧳 Check Out</div>
+    </div>
+
+    <div class="card">
+        <div class="time">09:00</div>
+        <div class="location">🏝️ Φακίστρα</div>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/HinWgxKznJsp2VMw7">📍 Google Maps</a>
+        </div>
+
+        <div class="funfact">
+            💡 Η Φακίστρα θεωρείται από πολλούς η πιο όμορφη παραλία
+            του Πηλίου, αλλά πρέπει πρώτα να νικήσεις τα σκαλιά.
+        </div>
+
+        <div class="done">
+            <input type="checkbox"> Επιβιώσαμε από τα σκαλιά ✅
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">15:00</div>
+        <div class="location">🍽️ Νταμούχαρη</div>
+
+        <p>Φαγητό και ίσως μια τελευταία βουτιά.</p>
+
+        <div class="actions">
+            <a href="https://maps.app.goo.gl/Ui6CyKKB8wFhQSxg6">📍 Google Maps</a>
+            <a href="https://maps.app.goo.gl/NHSbrgWQehyd6Mdm6">🍽️ Ταβέρνα</a>
+            <a href="#">🏖️ Παραλία</a>
+        </div>
+
+        <div class="funfact">
+            💡 Στο λιμανάκι της Νταμούχαρης γυρίστηκαν οι σκηνές του
+            γάμου από το Mamma Mia!.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time">17:30</div>
+        <div class="location">🚗 Αναχώρηση</div>
+    </div>
+
+    <div class="card">
+        <div class="time">21:30</div>
+        <div class="location">🏠 Άφιξη Θεσσαλονίκη</div>
+
+        <div class="funfact">
+            🏆 Achievement unlocked: Πήλιο 
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <h3>🎯 Mission Objectives</h3>
+
+    ✔ Να έχουν διαβαστεί τουλάχιστον 2 κεφάλαια απο βιβλίο<br>
+    ✔ Να μην υπάρξει η φράση "δεν πεινάω"<br>
+
+</div>
+
+<script>
+
+function showDay(day, button){
+
+    document.querySelectorAll('.day').forEach(d=>{
+        d.classList.remove('active');
+    });
+
+    document.querySelectorAll('.day-btn').forEach(b=>{
+        b.classList.remove('active');
+    });
+
+    document.getElementById('day'+day).classList.add('active');
+    button.classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
